@@ -1,0 +1,77 @@
+{
+  "extended_family": [
+    {
+      "id": "melissa-welch-smith",
+      "firstName": "Melissa",
+      "lastName": "Smith",
+      "maidenName": "Welch",
+      "relationship": "Partner (2008-2023)",
+      "location": "Central Florida",
+      "duration": "20 years",
+      "relationships": [
+        {
+          "type": "parent",
+          "id": "dawn-welch"
+        },
+        {
+          "type": "step-parent",
+          "id": "larry-koepher"
+        },
+        {
+          "type": "biological-parent",
+          "id": "robert-welch-hennessy"
+        }
+      ],
+      "notes": "Partner since 2008, split up in 2023. Lived in Central Florida for 20 years."
+    },
+    {
+      "id": "dawn-welch",
+      "firstName": "Dawn",
+      "lastName": "Welch",
+      "relationship": "Melissa's Mother",
+      "location": "Scottsdale, Arizona",
+      "relationships": [
+        {
+          "type": "child",
+          "id": "melissa-welch-smith"
+        },
+        {
+          "type": "spouse",
+          "id": "larry-koepher"
+        }
+      ]
+    },
+    {
+      "id": "larry-koepher",
+      "firstName": "Larry",
+      "lastName": "Koepher",
+      "relationship": "Melissa's Step Father",
+      "location": "Scottsdale, Arizona",
+      "relationships": [
+        {
+          "type": "step-child",
+          "id": "melissa-welch-smith"
+        },
+        {
+          "type": "spouse",
+          "id": "dawn-welch"
+        }
+      ]
+    },
+    {
+      "id": "robert-welch-hennessy",
+      "firstName": "Robert",
+      "lastName": "Hennessy",
+      "middleName": "Welch",
+      "relationship": "Melissa's Biological Father",
+      "location": "North Carolina",
+      "previousLocation": "Central",
+      "relationships": [
+        {
+          "type": "child",
+          "id": "melissa-welch-smith"
+        }
+      ]
+    }
+  ]
+}

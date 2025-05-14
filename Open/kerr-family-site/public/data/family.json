@@ -1,0 +1,246 @@
+{
+  "people": [
+    {
+      "id": "jeff-kerr",
+      "firstName": "Jeff",
+      "lastName": "Kerr",
+      "birthDate": "August 6, 1977",
+      "branch": "core",
+      "generation": 3,
+      "bio": "Jeff Kerr is part of the third generation of the Kerr family in Michigan.",
+      "relationships": [
+        { "type": "child", "personId": "don-kerr" },
+        { "type": "child", "personId": "debby-kerr" },
+        { "type": "sibling", "personId": "linsey-kerr" },
+        { "type": "partner", "personId": "melissa-welch-smith", "years": "2008-2023" }
+      ]
+    },
+    {
+      "id": "don-kerr",
+      "firstName": "Don",
+      "lastName": "Kerr",
+      "birthDate": "December 8, circa 1950",
+      "branch": "paternal",
+      "generation": 2,
+      "bio": "Don Kerr is part of the second generation of the Kerr family.",
+      "relationships": [
+        { "type": "child", "personId": "donald-kerr" },
+        { "type": "child", "personId": "loraine-kerr" },
+        { "type": "spouse", "personId": "debby-kerr" },
+        { "type": "parent", "personId": "jeff-kerr" },
+        { "type": "parent", "personId": "linsey-kerr" }
+      ]
+    },
+    {
+      "id": "debby-kerr",
+      "firstName": "Debby",
+      "lastName": "Kerr",
+      "maidenName": "Mowry",
+      "birthDate": "February 3, circa 1948",
+      "branch": "maternal",
+      "generation": 2,
+      "bio": "Debby Kerr (née Mowry) connects the Kerr family to the Mowry and Lowe families.",
+      "relationships": [
+        { "type": "child", "personId": "donna-mowry" },
+        { "type": "child", "personId": "george-richard-mowry" },
+        { "type": "raised-by", "personId": "norman-bud-lowe" },
+        { "type": "spouse", "personId": "don-kerr" },
+        { "type": "parent", "personId": "jeff-kerr" },
+        { "type": "parent", "personId": "linsey-kerr" }
+      ]
+    },
+    {
+      "id": "linsey-kerr",
+      "firstName": "Linsey",
+      "lastName": "Kerr",
+      "birthDate": "December 13",
+      "branch": "core",
+      "generation": 3,
+      "bio": "Linsey Kerr is part of the third generation of the Kerr family.",
+      "relationships": [
+        { "type": "child", "personId": "don-kerr" },
+        { "type": "child", "personId": "debby-kerr" },
+        { "type": "sibling", "personId": "jeff-kerr" }
+      ]
+    },
+    {
+      "id": "donald-kerr",
+      "firstName": "Donald",
+      "lastName": "Kerr",
+      "branch": "paternal",
+      "generation": 1,
+      "bio": "Donald Kerr is the patriarch of the Kerr family line featured in this genealogy.",
+      "relationships": [
+        { "type": "spouse", "personId": "loraine-kerr" },
+        { "type": "parent", "personId": "don-kerr" },
+        { "type": "parent", "personId": "steve-kerr" },
+        { "type": "parent", "personId": "vanessa-kerr-otsuka" },
+        { "type": "parent", "personId": "sharron-kerr" }
+      ]
+    },
+    {
+      "id": "loraine-kerr",
+      "firstName": "Loraine",
+      "lastName": "Kerr",
+      "branch": "paternal",
+      "generation": 1,
+      "bio": "Loraine Kerr, alongside her husband Donald, established the Michigan branch of the Kerr family.",
+      "relationships": [
+        { "type": "spouse", "personId": "donald-kerr" },
+        { "type": "parent", "personId": "don-kerr" },
+        { "type": "parent", "personId": "steve-kerr" },
+        { "type": "parent", "personId": "vanessa-kerr-otsuka" },
+        { "type": "parent", "personId": "sharron-kerr" }
+      ]
+    },
+    {
+      "id": "donna-mowry",
+      "firstName": "Donna",
+      "lastName": "Mowry",
+      "deathDate": "circa 1984",
+      "branch": "maternal",
+      "generation": 1,
+      "bio": "Donna Mowry was part of a complex family structure that influenced the maternal line of the Kerr family.",
+      "relationships": [
+        { "type": "spouse", "personId": "george-richard-mowry" },
+        { "type": "partner", "personId": "norman-bud-lowe" },
+        { "type": "parent", "personId": "debby-kerr" }
+      ]
+    },
+    {
+      "id": "george-richard-mowry",
+      "firstName": "George Richard",
+      "lastName": "Mowry",
+      "birthDate": "January 25, 1927",
+      "deathDate": "October 8, 1955",
+      "branch": "maternal",
+      "generation": 1,
+      "bio": "George Richard Mowry was Debby Kerr's biological father, who passed away when she was young.",
+      "relationships": [
+        { "type": "spouse", "personId": "donna-mowry" },
+        { "type": "parent", "personId": "debby-kerr" }
+      ]
+    },
+    {
+      "id": "norman-bud-lowe",
+      "firstName": "Norman William",
+      "lastName": "Lowe",
+      "nickname": "Bud",
+      "deathDate": "October 3, 1989",
+      "branch": "maternal",
+      "generation": 1,
+      "bio": "Norman 'Bud' Lowe played a significant role as a father figure to Debby despite no biological connection.",
+      "relationships": [
+        { "type": "partner", "personId": "donna-mowry" },
+        { "type": "raised", "personId": "debby-kerr" }
+      ]
+    },
+    {
+      "id": "steve-kerr",
+      "firstName": "Steve",
+      "lastName": "Kerr",
+      "branch": "paternal",
+      "generation": 2,
+      "bio": "Steve Kerr is Don Kerr's brother, whose children have established branches in different parts of the country.",
+      "relationships": [
+        { "type": "child", "personId": "donald-kerr" },
+        { "type": "child", "personId": "loraine-kerr" },
+        { "type": "sibling", "personId": "don-kerr" },
+        { "type": "sibling", "personId": "vanessa-kerr-otsuka" },
+        { "type": "sibling", "personId": "sharron-kerr" },
+        { "type": "parent", "personId": "jeremy-kerr" }
+      ]
+    },
+    {
+      "id": "vanessa-kerr-otsuka",
+      "firstName": "Vanessa",
+      "lastName": "Kerr Otsuka",
+      "branch": "california",
+      "generation": 2,
+      "bio": "Vanessa Kerr Otsuka represents the California branch of the family through her marriage to Richard Otsuka.",
+      "relationships": [
+        { "type": "child", "personId": "donald-kerr" },
+        { "type": "child", "personId": "loraine-kerr" },
+        { "type": "sibling", "personId": "don-kerr" },
+        { "type": "sibling", "personId": "steve-kerr" },
+        { "type": "sibling", "personId": "sharron-kerr" }
+      ]
+    },
+    {
+      "id": "sharron-kerr",
+      "firstName": "Sharron",
+      "lastName": "Kerr",
+      "branch": "paternal",
+      "generation": 2,
+      "bio": "Sharron Kerr is one of the children of Donald and Loraine Kerr.",
+      "relationships": [
+        { "type": "child", "personId": "donald-kerr" },
+        { "type": "child", "personId": "loraine-kerr" },
+        { "type": "sibling", "personId": "don-kerr" },
+        { "type": "sibling", "personId": "steve-kerr" },
+        { "type": "sibling", "personId": "vanessa-kerr-otsuka" }
+      ]
+    },
+    {
+      "id": "jeremy-kerr",
+      "firstName": "Jeremy",
+      "lastName": "Kerr",
+      "branch": "louisiana",
+      "generation": 3,
+      "bio": "Jeremy Kerr, son of Steve Kerr, represents the family's expansion to Louisiana.",
+      "relationships": [
+        { "type": "child", "personId": "steve-kerr" }
+      ]
+    },
+    {
+      "id": "melissa-welch-smith",
+      "firstName": "Melissa",
+      "lastName": "Smith",
+      "maidenName": "Welch",
+      "branch": "extended",
+      "bio": "Melissa (Welch) Smith was a partner to Jeff Kerr from 2008 to 2023. They lived in Central Florida for 20 years.",
+      "relationships": [
+        { "type": "partner", "personId": "jeff-kerr", "years": "2008-2023" },
+        { "type": "child", "personId": "dawn-welch" },
+        { "type": "step-child", "personId": "larry-koepher" },
+        { "type": "child", "personId": "robert-welch-hennessy" }
+      ]
+    },
+    {
+      "id": "dawn-welch",
+      "firstName": "Dawn",
+      "lastName": "Welch",
+      "branch": "extended",
+      "location": "Scottsdale, Arizona",
+      "bio": "Dawn Welch is Melissa's mother, currently living in Scottsdale, Arizona.",
+      "relationships": [
+        { "type": "parent", "personId": "melissa-welch-smith" },
+        { "type": "spouse", "personId": "larry-koepher" }
+      ]
+    },
+    {
+      "id": "larry-koepher",
+      "firstName": "Larry",
+      "lastName": "Koepher",
+      "branch": "extended",
+      "location": "Scottsdale, Arizona",
+      "bio": "Larry Koepher is Melissa's step-father, currently living in Scottsdale, Arizona with Dawn Welch.",
+      "relationships": [
+        { "type": "step-parent", "personId": "melissa-welch-smith" },
+        { "type": "spouse", "personId": "dawn-welch" }
+      ]
+    },
+    {
+      "id": "robert-welch-hennessy",
+      "firstName": "Robert",
+      "lastName": "Hennessy",
+      "middleName": "Welch",
+      "branch": "extended",
+      "location": "North Carolina",
+      "bio": "Robert (Welch) Hennessy is Melissa's biological father from North Carolina.",
+      "relationships": [
+        { "type": "parent", "personId": "melissa-welch-smith" }
+      ]
+    }
+  ]
+}

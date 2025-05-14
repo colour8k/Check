@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1c3f5f;
+  --primary-light: #2c5a8c;
+  --primary-dark: #14293d;
+  --secondary: #7c2128;
+  --secondary-light: #9c353d;
+  --secondary-dark: #56171c;
+  --accent: #d5b048;
+  --accent-light: #e6ca7a;
+  --accent-dark: #a88b32;
+  --background: #f7f3e9;
+  --background-alt: #f1ece0;
+  --text: #2a2a2a;
+  --text-light: #555555;
+}
+
+@layer base {
+  html, body {
+    @apply bg-background text-text;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    @apply font-medium;
+  }
+  
+  h1 {
+    @apply text-4xl mb-6;
+  }
+  
+  h2 {
+    @apply text-3xl mb-4;
+  }
+  
+  h3 {
+    @apply text-2xl mb-3;
+  }
+  
+  h4 {
+    @apply text-xl mb-2;
+  }
+  
+  p {
+    @apply mb-4;
+  }
+  
+  a {
+    @apply text-primary hover:text-primary-light transition-colors;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary px-4 py-2;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-light;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-secondary-light;
+  }
+  
+  .btn-accent {
+    @apply bg-accent text-text hover:bg-accent-light;
+  }
+  
+  .btn-outline {
+    @apply border border-primary text-primary hover:bg-primary hover:text-white;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+  
+  .person-card {
+    @apply bg-white rounded-lg shadow-md p-4 border-l-4 border-primary transition-all hover:shadow-lg;
+  }
+  
+  .person-card-sm {
+    @apply bg-white rounded p-2 border-l-4 border-primary text-sm;
+  }
+  
+  .person-photo {
+    @apply rounded-full overflow-hidden bg-background-alt;
+  }
+  
+  .nav-link {
+    @apply px-3 py-2 text-text-light hover:text-primary transition-colors;
+  }
+  
+  .nav-link-active {
+    @apply text-primary font-medium;
+  }
+  
+  .section {
+    @apply py-12;
+  }
+
+  .hero-section {
+    @apply relative py-20 text-white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/family-hero-bg.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Custom styles for family tree visualization */
+.family-tree-container {
+  @apply w-full h-[600px] relative overflow-hidden bg-background-alt rounded-xl border border-gray-200;
+}
+
+.family-tree-svg {
+  @apply w-full h-full;
+}
+
+.tree-node {
+  @apply cursor-pointer;
+}
+
+.tree-node-card {
+  @apply fill-white stroke-gray-300 stroke-1;
+}
+
+.tree-node-card-selected {
+  @apply stroke-primary stroke-2;
+}
+
+.tree-node-text {
+  @apply text-xs fill-text font-medium;
+}
+
+.tree-link {
+  @apply fill-none stroke-gray-400 stroke-1;
+}
+
+/* Custom styles for timeline visualization */
+.timeline-container {
+  @apply w-full h-[400px] relative overflow-hidden bg-background-alt rounded-xl border border-gray-200;
+}
+
+.timeline-axis line {
+  @apply stroke-gray-300;
+}
+
+.timeline-axis text {
+  @apply fill-text-light text-xs;
+}
+
+.timeline-event {
+  @apply cursor-pointer;
+}
+
+.timeline-event-dot {
+  @apply stroke-white stroke-1;
+}
+
+.timeline-event-dot-birth {
+  @apply fill-green-500;
+}
+
+.timeline-event-dot-death {
+  @apply fill-gray-500;
+}
+
+.timeline-event-dot-marriage {
+  @apply fill-red-500;
+}
+
+.timeline-event-dot-historical {
+  @apply fill-blue-500;
+}
+
+/* Custom styles for map visualization */
+.map-container {
+  @apply w-full h-[500px] relative overflow-hidden rounded-xl border border-gray-200;
+}
+
+.map-controls {
+  @apply absolute top-4 right-4 z-10 bg-white p-2 rounded shadow-md;
+}
+
+.map-legend {
+  @apply absolute bottom-4 left-4 z-10 bg-white p-2 rounded shadow-md;
+}
+
+/* Custom styles for relationship network visualization */
+.network-container {
+  @apply w-full h-[600px] relative overflow-hidden bg-background-alt rounded-xl border border-gray-200;
+}
+
+.network-node {
+  @apply cursor-pointer;
+}
+
+.network-link {
+  @apply stroke-gray-300;
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out;
+}
